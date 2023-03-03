@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 40px;
+        }
+    .tab{ 
+        margin-left: 40px; 
+    }
+    .up {
+        vertical-align: 15px;
+    }
+    span:nth-child(even) {
+        vertical-align: top;
+    }
+      
+    span:nth-child(odd) {
+        vertical-align: bottom;
+    }
+    .reduced-lspace {
+        letter-spacing: -0.2em;
+        word-spacing: 0.3em;
+    }
+        </style>
+    
+</head>
+<body>
+    <h1>Заголовок первого уровня</h1>
+    <h2>Предварительно форматированный текст:</h2>
+    <pre> x | o |  
+-----------
+   | x |  
+-----------
+ o | x | o 
+    </pre>
+    <hr>
+
+    <h2>Тег address</h2>
+    <!--Пожалуйста, дополнительно объясните, зачем он нужен. чем он отличается от простого написания адреса в абзаце, например?-->
+    <address>Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911</address>
+    <hr>
+
+    <h2>Семантические и функциональные строчные теги</h2>
+    <p><del style="color:crimson">Данный текст убрать из монографии</del> и заменить его на <ins style="color:blue">вновь помещённый текст.</ins></p>
+    <hr>
+
+    <h2>Работа со строчными и блоковыми цитатами</h2>
+    <p>Цитата короткая:<br>
+    <q><i>И всё-­таки она вертится!</i></q></p>
+
+    <p>Цитата, занимающая несколько предложений:</p>
+    <blockquote><p>О сколько нам открытий чудных<br>
+        Готовят просвещенья дух<br>
+        И опыт, сын ошибок трудных,<br>
+        И гений, парадоксов друг,<br>
+        И случай, бог изобретатель...</p></blockquote>
+    <hr>
+
+    <h2>Семантические и функциональные строчные теги</h2>
+    <p><strong>Тэг &lt;STRONG&gt;  делает данный фрагмент текста более важным.</strong> <em>Тэг &lt;em&gt; &mdash; менее важным.</em>
+        В то время как теги &lt;b&gt; и &lt;i&gt; делают текст просто <b>полужирным</b> и <i>курсивом</i> соответственно.</p>
+    <hr>
+
+    <h2>Теги форматирования машинного языка</h2>
+    <p>При выполнении программного кода на языке PERL:</p>
+    <p><code>#!/usr/local/bin/perl<br>
+        print "Content‐type: text/html\n\n";<br>
+        print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";</code></p>
+    <p>Программа выведет:</p>
+    <p><samp>Hello, World!</samp></p>
+    <p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
+    <h1>Hello, World!</h1>
+    <hr>
+
+    <h2>Комментарии и литералы(мнемоники) в HTML</h2>
+    <p>&lt; &#33; &ndash; &ndash; это комментарий &ndash; &ndash;&gt;</p>
+    <p class="tab">&lt; &#33; &ndash; &ndash; и это также комментарий,<br>
+        занимающий более одной строки &ndash; &ndash;&gt;</p>
+    <hr>
+
+    <h2>Теги над&ndash;­ и подстрочных символов</h2>
+    <!--в презентации пишут align="center", он работает, но выделен красным. в интернетах пишут, что устарел-->
+    <h3 style="text-align: center;">Магазин работает:</h3>
+    <p style="text-align: center";>08<sup><u>30</u></sup> до 18<sup><u>30</u></sup><br>
+        обед с 13<sup><u>00</u></sup> до 14<sup><u>00</u></sup><br>
+        выходной: <u>суббота</u>, <u>воскресенье</u></p> 
+    <hr>
+    
+    <h2>Вот такой текст</h2>
+    <!--мне не нравится, что нужно каждый символ заворачивать в спан-->
+    <h2 class="reduced-lspace"><sup>
+        <span>Э</span>
+        <span>т</span>
+        <span>о</span>
+        <span>&nbsp;&nbsp;</span>
+        <span>п</span>
+        <span>р</span>
+        <span>о</span>
+        <span>с</span>
+        <span>т</span>
+        <span>о</span>
+        <span>&nbsp;</span>
+        <span>в</span>
+        <span>е</span>
+        <span>с</span>
+        <span>е</span>
+        <span>л</span>
+        <span>ы</span>
+        <span>й</span>
+        <span>&nbsp;&nbsp;</span>
+        <span>т</span>
+        <span>е</span>
+        <span>к</span>
+        <span>с</span>
+        <span>т</span>
+    </sup></h2>
+    <hr>
+
+    <h2>Акроним и курсив</h2>
+    <p><abbr title ="какое-то пояснение">ТФ</abbr>=e<sup><i>-i&pi;x</i></sup>+log<sub><i>x</i></sub>4</p>
+    <hr>
+
+    <h2>Тег small внутри абзаца</h2>
+    <p style="text-align: right;"><small>Создано при помощи блонота&copy;</small></p>
+
+
+    
+</body>
+</html>
