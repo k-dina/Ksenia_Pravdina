@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        .class{
             background-image: url('http://142.93.172.35:8080/static/media/cards.7e0a18f0.png');
             width: 142px;
             height: 198px;
             background-repeat: no-repeat;
-            display:inline-block;
+            float:left;
             
         }
-        .seven{
+        .eight{
           background-position: -430px -1188px;
 
         }
@@ -32,32 +32,30 @@
             background-position: -284px -2378px;
         }
         .overlay{
-            position: absolute; left: 120px;
+            margin-left: -25px;
         }
     </style>
 </head>
 <body>
-    <div class="seven"></div>
-    <div class="queen"></div>
-    <div class="nine"></div>
-    <div class="A"></div>
-    <div class="joker"></div>
-    <br>
-    <div class="seven">
-        <div class="queen overlay">
-            <div class="nine overlay">
-                <div class="A overlay">
-                    <div class="joker overlay"></div>
-                </div>
-            </div>
-        </div>
+    
+    <div style="border: solid black 1px">
+        <div class="class eight"></div>
+        <div class="class queen"></div>
+        <div class="class nine"></div>
+        <div class="class A"></div>
+        <div class="class joker"></div>
+        <div style="clear:both"></div>
     </div>
-    <br>
-    <div class="seven"></div>
-    <div class="queen" style="position: relative; left: -25px;"></div>
-    <div class="nine" style="position: relative; left: -50px;"></div>
-    <div class="A" style="position: relative; left: -75px;"></div>
-    <div class="joker" style="position: relative; left: -100px;"></div>
+    <div style="border: solid black 1px; padding-left: 25px;">
+        <div class="class eight overlay"></div>
+        <div class="class queen overlay"></div>
+        <div class="class nine overlay"></div>
+        <div class="class A overlay"></div>
+        <div class="class joker overlay"></div>
+        <div style="clear:both"></div>
+    </div>
+    
+   
     
     
     
